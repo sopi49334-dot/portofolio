@@ -1,0 +1,955 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="id"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Sopi Fadhillah Nur Azizah — Portfolio</title>
+<!-- Google Fonts: Cormorant Garamond, Caveat, Plus Jakarta Sans, Space Mono -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Mono:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            espresso: '#482A22',
+            'espresso-dark': '#361E18',
+            cream: '#F6F4EA',
+            butter: '#F9F5D7',
+            'sage-sand': '#DFD8B8',
+            'gold-star': '#A68438',
+            ink: '#3D231C',
+            'ink-soft': 'rgba(61, 35, 28, 0.72)',
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            script: ['"Caveat"', 'cursive'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"Space Mono"', 'monospace'],
+          },
+          boxShadow: {
+            'scrapbook': '0 12px 28px -6px rgba(45, 24, 18, 0.18), 0 4px 10px -2px rgba(45, 24, 18, 0.08)',
+            'scrapbook-deep': '0 20px 35px -8px rgba(35, 18, 14, 0.28), 0 8px 16px -4px rgba(35, 18, 14, 0.12)',
+            'sticky': '2px 8px 16px rgba(54, 30, 24, 0.12)',
+          }
+        }
+      }
+    }
+  </script>
+<!-- BEGIN: Custom CSS for Patterns, Textures, and Scrapbook Elements -->
+<style data-purpose="background-grids">
+    /* Deep espresso grid */
+    .bg-espresso-grid {
+      background-color: #482A22;
+      background-image: 
+        linear-gradient(to right, rgba(246, 244, 234, 0.07) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(246, 244, 234, 0.07) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+
+    /* Cream paper grid */
+    .bg-cream-grid {
+      background-color: #F6F4EA;
+      background-image: 
+        linear-gradient(to right, rgba(72, 42, 34, 0.08) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(72, 42, 34, 0.08) 1px, transparent 1px);
+      background-size: 28px 28px;
+    }
+
+    /* Sage warm olive grid */
+    .bg-sage-grid {
+      background-color: #DFD8B8;
+      background-image: 
+        linear-gradient(to right, rgba(72, 42, 34, 0.09) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(72, 42, 34, 0.09) 1px, transparent 1px);
+      background-size: 30px 30px;
+    }
+
+    /* Lined notebook paper texture */
+    .bg-lined-paper {
+      background-color: #FAF8F0;
+      background-image: repeating-linear-gradient(
+        to bottom,
+        transparent,
+        transparent 27px,
+        rgba(166, 132, 56, 0.2) 28px
+      );
+      line-height: 28px;
+    }
+  </style>
+<style data-purpose="scrapbook-decorations">
+    /* Washi tape decorative strip */
+    .washi-tape {
+      background-color: #482A22;
+      background-image: radial-gradient(#F9F5D7 1.5px, transparent 1.5px);
+      background-size: 9px 9px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+      position: relative;
+    }
+    .washi-tape::before, .washi-tape::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 6px;
+      background-size: 6px 6px;
+    }
+    .washi-tape::before {
+      left: -4px;
+      background: linear-gradient(135deg, transparent 33.33%, #482A22 33.33%) 0 0;
+    }
+    .washi-tape::after {
+      right: -4px;
+      background: linear-gradient(45deg, transparent 33.33%, #482A22 33.33%) 0 0;
+    }
+
+    /* Subtle paper texture grain effect */
+    .paper-edge {
+      filter: drop-shadow(0 4px 12px rgba(54, 30, 24, 0.1));
+    }
+    
+    /* Star sticker shape */
+    .star-gold {
+      color: #A68438;
+      filter: drop-shadow(0 1px 2px rgba(72, 42, 34, 0.2));
+    }
+  </style>
+<!-- END: Custom CSS for Patterns, Textures, and Scrapbook Elements -->
+</head>
+<body class="font-sans text-ink bg-cream antialiased selection:bg-gold-star selection:text-white">
+<!-- BEGIN: Sticky Navigation -->
+<header class="sticky top-0 z-50 backdrop-blur-md bg-cream/90 border-b border-espresso/15 transition-all duration-300">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+<!-- Logo signature -->
+<a class="group flex items-center gap-2" href="#">
+<span class="font-script text-3xl font-bold text-espresso group-hover:text-gold-star transition-colors">Sopi.</span>
+<span class="hidden sm:inline-block font-mono text-[10px] tracking-widest uppercase bg-butter px-2 py-0.5 border border-espresso/20 rounded-full text-espresso">Portfolio • 2026</span>
+</a>
+<!-- Navigation links -->
+<nav class="flex items-center gap-4 sm:gap-7 text-xs sm:text-sm font-medium tracking-wide">
+<a class="text-espresso hover:text-gold-star transition-colors" href="#about">About</a>
+<a class="text-espresso hover:text-gold-star transition-colors" href="#strengths">Why Me</a>
+<a class="text-espresso hover:text-gold-star transition-colors" href="#experience">Experience</a>
+<a class="text-espresso hover:text-gold-star transition-colors" href="#skills">Skills</a>
+<a class="px-3 py-1.5 bg-espresso text-cream hover:bg-gold-star font-mono text-xs uppercase tracking-wider rounded transition-all duration-200 shadow-sm" href="#contact">
+          Contact
+        </a>
+</nav>
+</div>
+</header>
+<!-- END: Sticky Navigation -->
+<main>
+<!-- BEGIN: Hero Section (ID Badge Card on Espresso Grid) -->
+<section class="relative py-16 md:py-24 bg-espresso-grid overflow-hidden flex items-center justify-center min-h-[90vh]" id="hero">
+<!-- Decorative background blur spots -->
+<div class="absolute top-1/4 left-10 w-64 h-64 bg-gold-star/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute bottom-10 right-10 w-72 h-72 bg-butter/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-4xl w-full mx-auto px-4 relative z-10">
+<!-- Outer ID Badge Card Wrapper -->
+<div class="relative mx-auto max-w-3xl transform -rotate-1 hover:rotate-0 transition-transform duration-500 ease-out">
+<!-- Realistic SVG Silver Binder Clip Clamped at Top Center -->
+<div class="absolute -top-7 left-1/2 -translate-x-1/2 z-30 pointer-events-none flex flex-col items-center">
+<!-- Silver Top Loop Wire -->
+<svg class="drop-shadow-md" fill="none" height="34" viewBox="0 0 46 34" width="46" xmlns="http://www.w3.org/2000/svg">
+<path d="M14 32V10C14 5.58172 17.5817 2 22 2H24C28.4183 2 32 5.58172 32 10V32" stroke="#A8A8A8" stroke-linecap="round" stroke-width="3.5"></path>
+<path d="M16 32V12C16 8.68629 18.6863 6 22 6C25.3137 6 28 8.68629 28 12V32" stroke="#D1D5DB" stroke-width="1.8"></path>
+</svg>
+<!-- Black/Metallic Clip Jaw Body -->
+<div class="w-20 h-7 bg-gradient-to-b from-[#2e2e2e] via-[#1f1f1f] to-[#121212] rounded-t-sm rounded-b-md shadow-lg border border-neutral-700/60 flex items-center justify-center -mt-1">
+<div class="w-16 h-1 bg-neutral-500/30 rounded-full"></div>
+</div>
+</div>
+<!-- Main ID Card Box -->
+<div class="relative bg-butter rounded-2xl p-6 sm:p-10 border-2 border-espresso/25 shadow-scrapbook-deep mt-4">
+<!-- Interior Dashed Border for Specimen / Badge Style -->
+<div class="border border-dashed border-espresso/35 rounded-xl p-5 sm:p-8 relative">
+<!-- Star Accents on Badge -->
+<span class="absolute top-3 left-4 text-gold-star text-2xl select-none">★</span>
+<span class="absolute bottom-4 right-4 text-gold-star text-xl select-none">★</span>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+<!-- Left Metadata Column -->
+<div class="md:col-span-7 flex flex-col justify-between">
+<div>
+<span class="inline-block font-mono text-[11px] font-bold tracking-widest uppercase text-espresso/70 mb-2 border-b border-espresso/20 pb-0.5">
+                      Technical &amp; Creative Portfolio
+                    </span>
+<h1 class="font-serif text-3xl sm:text-5xl font-bold tracking-tight text-espresso leading-[1.05] uppercase">
+                      CREATIVE<br>PORTFOLIO
+                    </h1>
+<!-- Script Name Presentation -->
+<div class="my-4">
+<p class="font-script text-4xl sm:text-5xl font-bold text-espresso leading-none transform -rotate-2">
+                        Sopi Fadhillah
+                      </p>
+<p class="font-script text-2xl sm:text-3xl text-espresso/80 leading-none pl-6 -mt-1">
+                        Nur Azizah
+                      </p>
+</div>
+<!-- Subtitle / Role Tag -->
+<p class="font-mono text-xs sm:text-sm tracking-widest uppercase text-espresso/85 font-semibold pt-1 border-t border-espresso/15">
+                      INFORMATICS STUDENT • CAD DRAFTER • SITE INSPECTOR
+                    </p>
+</div>
+<!-- Quick Stats & Actions -->
+<div class="mt-8 flex flex-wrap items-center gap-3">
+<a class="px-5 py-2.5 bg-espresso text-cream text-xs font-mono font-semibold uppercase tracking-wider rounded shadow hover:bg-gold-star transition-all duration-200 flex items-center gap-2" href="#experience">
+                      Explore Portfolio
+                      <span>↓</span>
+</a>
+<a class="px-5 py-2.5 border border-espresso/40 hover:bg-espresso/5 text-espresso text-xs font-mono font-semibold uppercase tracking-wider rounded transition-colors" href="#contact">
+                      Contact Me
+                    </a>
+</div>
+</div>
+<!-- Right Card Column: Photo, Polka Star & Barcode -->
+<div class="md:col-span-5 flex flex-col items-center">
+<div class="relative w-full max-w-[240px]">
+<!-- Polka Dot Decorative Star Behind Photo -->
+<div class="absolute -top-5 -left-5 w-16 h-16 bg-[#482A22] rounded-full flex items-center justify-center text-butter font-bold text-xs tracking-tighter transform -rotate-12 shadow-md">
+<span class="text-center font-mono leading-none">TECH<br>+ CAD</span>
+</div>
+<!-- Framed Photo Container (Scrapbook Frame) -->
+<div class="bg-white p-2.5 rounded-lg shadow-md border border-espresso/20 transform rotate-1 hover:rotate-0 transition-transform duration-300">
+<div class="w-full aspect-[4/5] bg-espresso/10 rounded overflow-hidden flex flex-col items-center justify-center relative border border-espresso/10 text-center p-4">
+<img alt="Sopi Fadhillah Nur Azizah - Portrait" class="w-full h-full object-cover rounded" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARusRFeoXwC6YLSgFk0uSrPqwJPRcE_VqEzTui7uho15IsGrer_lGkjhIe5EQxZGvx4EezJu41F5OntwIUaJh42JEWbSnKItSuXM2jy7NQF2PsAc85Dea6E5OPCPo1Qkvd4En2N3m1TEUdDBJKU6tgohIsrGL3n8-f2KLuKi8iISEHx1vli2OeFDjDtJq62N3u5bBLQ9I1vbeyOJTHN_oiXj4l-3Vp8sXMG3U1pJEvSP1_Bj_1gKSN">
+<!-- Badge Overlay on Photo -->
+<div class="absolute bottom-2 inset-x-2 bg-espresso/85 backdrop-blur-xs text-cream text-[10px] font-mono py-1 rounded tracking-wider uppercase">
+                          ITPLN • TKP
+                        </div>
+</div>
+</div>
+<!-- Barcode Graphic with Identification -->
+<div class="mt-4 bg-white/90 p-2.5 rounded border border-espresso/20 shadow-xs flex flex-col items-center">
+<!-- Barcode SVG -->
+<svg class="w-full h-9" fill="#361E18" viewBox="0 0 200 40" xmlns="http://www.w3.org/2000/svg">
+<rect height="40" width="3" x="0" y="0"></rect>
+<rect height="40" width="1" x="5" y="0"></rect>
+<rect height="40" width="4" x="8" y="0"></rect>
+<rect height="40" width="2" x="15" y="0"></rect>
+<rect height="40" width="1" x="20" y="0"></rect>
+<rect height="40" width="3" x="23" y="0"></rect>
+<rect height="40" width="5" x="30" y="0"></rect>
+<rect height="40" width="1" x="38" y="0"></rect>
+<rect height="40" width="3" x="42" y="0"></rect>
+<rect height="40" width="2" x="48" y="0"></rect>
+<rect height="40" width="4" x="53" y="0"></rect>
+<rect height="40" width="1" x="60" y="0"></rect>
+<rect height="40" width="6" x="64" y="0"></rect>
+<rect height="40" width="2" x="73" y="0"></rect>
+<rect height="40" width="3" x="78" y="0"></rect>
+<rect height="40" width="1" x="84" y="0"></rect>
+<rect height="40" width="4" x="88" y="0"></rect>
+<rect height="40" width="2" x="95" y="0"></rect>
+<rect height="40" width="5" x="100" y="0"></rect>
+<rect height="40" width="2" x="108" y="0"></rect>
+<rect height="40" width="3" x="113" y="0"></rect>
+<rect height="40" width="1" x="119" y="0"></rect>
+<rect height="40" width="4" x="123" y="0"></rect>
+<rect height="40" width="2" x="130" y="0"></rect>
+<rect height="40" width="5" x="135" y="0"></rect>
+<rect height="40" width="1" x="143" y="0"></rect>
+<rect height="40" width="3" x="147" y="0"></rect>
+<rect height="40" width="4" x="153" y="0"></rect>
+<rect height="40" width="2" x="160" y="0"></rect>
+<rect height="40" width="1" x="165" y="0"></rect>
+<rect height="40" width="5" x="169" y="0"></rect>
+<rect height="40" width="2" x="177" y="0"></rect>
+<rect height="40" width="3" x="182" y="0"></rect>
+<rect height="40" width="4" x="188" y="0"></rect>
+<rect height="40" width="2" x="195" y="0"></rect>
+</svg>
+<div class="flex justify-between w-full font-mono text-[9px] text-espresso/70 tracking-widest mt-1">
+<span>ID-2024-SOPI</span>
+<span>ITPLN • JKT</span>
+<span>0882-8954</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Hero Section -->
+<!-- BEGIN: Why Work With Sopi (#strengths, Cream Grid) -->
+<section class="py-20 bg-cream-grid border-b border-espresso/15 relative" id="strengths">
+<div class="max-w-6xl mx-auto px-4 sm:px-6">
+<!-- Section Header -->
+<div class="mb-14">
+<h2 class="font-serif text-3xl sm:text-5xl font-bold uppercase tracking-tight text-espresso">
+            WHY WORK<br>WITH SOPI?
+          </h2>
+<div class="mt-2 flex items-center gap-3">
+<span class="w-8 h-[2px] bg-gold-star inline-block"></span>
+<p class="font-mono text-xs sm:text-sm font-bold tracking-widest text-espresso/80 uppercase">
+              My Technical Approach: Precision + Structure + Digital Innovation
+            </p>
+</div>
+</div>
+<!-- 4 Tilted Sticky Notes with Washi Tape -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 pt-4">
+<!-- Sticky Note 1: Structured -->
+<div class="group relative bg-butter p-6 pt-8 rounded shadow-sticky border border-espresso/15 transform -rotate-2 hover:rotate-0 hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between">
+<!-- Washi tape at top -->
+<div class="absolute -top-3.5 left-1/2 -translate-x-1/2 w-20 h-6 washi-tape"></div>
+<!-- Star decoration -->
+<span class="absolute bottom-2 right-2 text-gold-star text-lg select-none">★</span>
+<div>
+<span class="font-mono text-[10px] tracking-widest uppercase text-espresso/60 block mb-1">01 / Methodology</span>
+<h3 class="font-script text-3xl font-bold text-espresso mb-2">Structured</h3>
+<p class="text-xs sm:text-sm leading-relaxed text-ink/80 font-normal">
+                Terbiasa menyusun gambar kerja teknis, denah denah arsitektur, dan struktur bangunan dua lantai secara presisi dan sistematis sesuai standar engineering.
+              </p>
+</div>
+<div class="mt-4 pt-3 border-t border-espresso/10 font-mono text-[10px] text-espresso/70 uppercase">
+              AutoCAD • Shop Drawings
+            </div>
+</div>
+<!-- Sticky Note 2: Detail-Oriented -->
+<div class="group relative bg-butter p-6 pt-8 rounded shadow-sticky border border-espresso/15 transform rotate-2 hover:rotate-0 hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between">
+<!-- Washi tape at top -->
+<div class="absolute -top-3.5 left-1/2 -translate-x-1/2 w-20 h-6 washi-tape"></div>
+<!-- Star decoration -->
+<span class="absolute bottom-2 right-2 text-gold-star text-lg select-none">★</span>
+<div>
+<span class="font-mono text-[10px] tracking-widest uppercase text-espresso/60 block mb-1">02 / Quality Control</span>
+<h3 class="font-script text-3xl font-bold text-espresso mb-2">Detail-Oriented</h3>
+<p class="text-xs sm:text-sm leading-relaxed text-ink/80 font-normal">
+                Teliti dalam mengawasi kesesuaian eksekusi konstruksi di lapangan dengan blueprint serta tertib mencatat inventaris keluar-masuk logistik material proyek.
+              </p>
+</div>
+<div class="mt-4 pt-3 border-t border-espresso/10 font-mono text-[10px] text-espresso/70 uppercase">
+              Site Inspection • Material Logs
+            </div>
+</div>
+<!-- Sticky Note 3: Adaptable -->
+<div class="group relative bg-butter p-6 pt-8 rounded shadow-sticky border border-espresso/15 transform -rotate-1 hover:rotate-0 hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between">
+<!-- Washi tape at top -->
+<div class="absolute -top-3.5 left-1/2 -translate-x-1/2 w-20 h-6 washi-tape"></div>
+<!-- Star decoration -->
+<span class="absolute bottom-2 right-2 text-gold-star text-lg select-none">★</span>
+<div>
+<span class="font-mono text-[10px] tracking-widest uppercase text-espresso/60 block mb-1">03 / Dual Domain</span>
+<h3 class="font-script text-3xl font-bold text-espresso mb-2">Adaptable</h3>
+<p class="text-xs sm:text-sm leading-relaxed text-ink/80 font-normal">
+                Memadukan fondasi teknik konstruksi perumahan dengan semangat belajar tinggi dan adaptasi komputasi digital di bidang Teknik Informatika ITPLN.
+              </p>
+</div>
+<div class="mt-4 pt-3 border-t border-espresso/10 font-mono text-[10px] text-espresso/70 uppercase">
+              Civil CAD • Informatika ITPLN
+            </div>
+</div>
+<!-- Sticky Note 4: Communicative -->
+<div class="group relative bg-butter p-6 pt-8 rounded shadow-sticky border border-espresso/15 transform rotate-3 hover:rotate-0 hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between">
+<!-- Washi tape at top -->
+<div class="absolute -top-3.5 left-1/2 -translate-x-1/2 w-20 h-6 washi-tape"></div>
+<!-- Star decoration -->
+<span class="absolute bottom-2 right-2 text-gold-star text-lg select-none">★</span>
+<div>
+<span class="font-mono text-[10px] tracking-widest uppercase text-espresso/60 block mb-1">04 / Collaboration</span>
+<h3 class="font-script text-3xl font-bold text-espresso mb-2">Communicative</h3>
+<p class="text-xs sm:text-sm leading-relaxed text-ink/80 font-normal">
+                Memiliki pengalaman berorganisasi, proaktif, dan kemampuan komunikasi verbal/tertulis yang baik untuk koordinasi efektif antara vendor, teknisi, dan tim.
+              </p>
+</div>
+<div class="mt-4 pt-3 border-t border-espresso/10 font-mono text-[10px] text-espresso/70 uppercase">
+              Cross-Team • Leadership
+            </div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Why Work With Sopi -->
+<!-- BEGIN: About Me & Profile Spec Sheet (#about, Split Section) -->
+<section class="border-b border-espresso/20" id="about">
+<div class="grid grid-cols-1 lg:grid-cols-12 min-h-[640px]">
+<!-- Left Side: Editorial Story in Deep Espresso Grid (Col 5) -->
+<div class="lg:col-span-5 bg-espresso-grid text-cream p-8 sm:p-12 md:p-16 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-espresso/30">
+<div>
+<!-- Star icon -->
+<span class="text-gold-star text-2xl select-none inline-block mb-3">★</span>
+<p class="font-script text-4xl sm:text-5xl text-cream/90 leading-tight">
+              Hey, I'm Sopi!
+            </p>
+<div class="mt-6 space-y-4 text-xs sm:text-sm text-cream/85 font-normal leading-relaxed">
+<p>
+                Saya mahasiswi <strong class="text-cream font-semibold">Teknik Informatika di Institut Teknologi PLN (ITPLN)</strong> yang memiliki fondasi vokasi solid di bidang <strong class="text-cream font-semibold">Desain Pemodelan &amp; Informasi Bangunan / Teknik Konstruksi Perumahan (SMKN 4 Jakarta)</strong>.
+              </p>
+<p>
+                Kombinasi latar belakang ini membentuk cara kerja yang terstruktur: memahami kalkulasi ruang, presisi gambar kerja (AutoCAD &amp; SketchUp), pengawasan lapangan langsung, sekaligus logika algoritma dan pemrograman modern.
+              </p>
+<p>
+                Berorientasi pada kerapian, ketepatan detail data inventaris, dan kolaborasi aktif dalam proyek teknik maupun teknologi.
+              </p>
+</div>
+</div>
+<!-- Quick contact micro-strip -->
+<div class="mt-10 pt-6 border-t border-cream/15 font-mono text-xs text-cream/70 flex flex-col gap-1.5">
+<div class="flex items-center gap-2">
+<span class="text-gold-star">§</span>
+<span>Cilincing, Jakarta Utara, DKI Jakarta</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-gold-star">§</span>
+<a class="hover:text-cream underline decoration-cream/30" href="mailto:sopi49334@gmail.com">sopi49334@gmail.com</a>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-gold-star">§</span>
+<span>+62 882-8954-6560</span>
+</div>
+</div>
+</div>
+<!-- Center: Scrapbook Collage Badge Strip (Col 3) -->
+<div class="lg:col-span-3 bg-sage-sand p-8 flex flex-col items-center justify-center relative overflow-hidden border-b lg:border-b-0 lg:border-r border-espresso/20">
+<!-- Scrapbook Center Collage Stack -->
+<div class="relative w-full max-w-[220px] flex flex-col items-center">
+<!-- Metallic clip on polaroid -->
+<div class="w-10 h-3 bg-neutral-700 rounded-sm mb-[-6px] z-20 shadow-sm border border-neutral-600"></div>
+<!-- Polaroid frame -->
+<div class="bg-white p-3 pb-5 rounded shadow-lg border border-espresso/20 w-full transform -rotate-3 hover:rotate-0 transition-transform">
+<div class="aspect-square bg-espresso/15 rounded flex items-center justify-center overflow-hidden">
+<img alt="Scrapbook snap" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBU6hY5nVET6WcYNKKsbsX8qJ8bJgMSi083S8unMZdX-PuTyRz-H_s944k21jI9NZ47CHsh1x08PqrQlKl3dXHKK-A6wCC1uRXjTwh8c3SR44Z8pzPz_SRypCYs4JDBlmgR8CiRwwpj8yTgiitHtDedQ0x3VuOFy1bsR3ZNBO1R_Hgzwv1uhEW4i4V7VZi5DsTx9mJRLhYGKWB2UqNKmfv45iwdWcbF80Ry_MFsJPE">
+</div>
+<div class="mt-2 font-script text-center text-espresso text-lg leading-tight font-bold">
+                in my element
+              </div>
+</div>
+<!-- Letter cutout badge circles spelling "S - O - P - I" -->
+<div class="flex items-center gap-1.5 mt-5">
+<div class="w-8 h-8 rounded-full bg-espresso text-cream font-mono font-bold flex items-center justify-center text-xs shadow-md border border-butter">S</div>
+<div class="w-8 h-8 rounded-full bg-butter text-espresso font-mono font-bold flex items-center justify-center text-xs shadow-md border border-espresso/30">O</div>
+<div class="w-8 h-8 rounded-full bg-gold-star text-cream font-mono font-bold flex items-center justify-center text-xs shadow-md border border-butter">P</div>
+<div class="w-8 h-8 rounded-full bg-espresso text-cream font-mono font-bold flex items-center justify-center text-xs shadow-md border border-butter">I</div>
+</div>
+<!-- Torn lined paper scrap with handwritten quote -->
+<div class="mt-5 bg-lined-paper p-4 rounded shadow border border-espresso/15 transform rotate-2 w-full">
+<div class="w-12 h-3 washi-tape mx-auto -mt-5 mb-2"></div>
+<p class="font-script text-base text-espresso leading-snug text-center">
+                "building strong foundations in code &amp; construction."
+              </p>
+</div>
+</div>
+</div>
+<!-- Right Side: Editorial Spec Sheet Table (Col 4) -->
+<div class="lg:col-span-4 bg-cream-grid p-6 sm:p-10 flex flex-col justify-center">
+<!-- Vintage Spec Sheet Card -->
+<div class="bg-white/95 p-6 rounded-xl border border-espresso/20 shadow-scrapbook relative">
+<!-- Brass Clip Element Top Right -->
+<div class="absolute -top-3.5 right-6 w-9 h-6 bg-gradient-to-r from-amber-600 via-amber-400 to-amber-700 rounded-sm shadow border border-amber-900/30 flex items-center justify-center">
+<div class="w-4 h-1 bg-amber-900/40 rounded-full"></div>
+</div>
+<!-- Header -->
+<div class="border-b-2 border-espresso pb-2 mb-4">
+<span class="font-mono text-[9px] font-bold tracking-widest text-espresso/60 uppercase">Candidate Metadata</span>
+<h3 class="font-serif text-2xl font-bold uppercase tracking-wide text-espresso">
+                CREATOR PROFILE
+              </h3>
+</div>
+<!-- Spec Table -->
+<div class="space-y-3 font-mono text-xs">
+<div class="grid grid-cols-12 pb-2 border-b border-dashed border-espresso/15">
+<span class="col-span-5 font-bold uppercase text-espresso/70 text-[10px]">University</span>
+<span class="col-span-7 text-espresso font-semibold">Institut Teknologi PLN</span>
+</div>
+<div class="grid grid-cols-12 pb-2 border-b border-dashed border-espresso/15">
+<span class="col-span-5 font-bold uppercase text-espresso/70 text-[10px]">Faculty / Major</span>
+<span class="col-span-7 text-espresso">Teknik Informatika</span>
+</div>
+<div class="grid grid-cols-12 pb-2 border-b border-dashed border-espresso/15">
+<span class="col-span-5 font-bold uppercase text-espresso/70 text-[10px]">Vocational BG</span>
+<span class="col-span-7 text-espresso">SMKN 4 Jakarta (TKP)</span>
+</div>
+<div class="grid grid-cols-12 pb-2 border-b border-dashed border-espresso/15">
+<span class="col-span-5 font-bold uppercase text-espresso/70 text-[10px]">Core Tools</span>
+<span class="col-span-7 text-espresso">AutoCAD, SketchUp, RAB</span>
+</div>
+<div class="grid grid-cols-12 pb-2 border-b border-dashed border-espresso/15">
+<span class="col-span-5 font-bold uppercase text-espresso/70 text-[10px]">Languages</span>
+<span class="col-span-7 text-espresso">Bahasa Indonesia, English</span>
+</div>
+<div class="grid grid-cols-12 pb-2 border-b border-dashed border-espresso/15">
+<span class="col-span-5 font-bold uppercase text-espresso/70 text-[10px]">Availability</span>
+<span class="col-span-7 text-espresso font-medium text-emerald-800">Open for Internship &amp; Projects</span>
+</div>
+<div class="grid grid-cols-12">
+<span class="col-span-5 font-bold uppercase text-espresso/70 text-[10px]">Location</span>
+<span class="col-span-7 text-espresso">Cilincing, Jakarta Utara</span>
+</div>
+</div>
+<!-- Signature footer stamp -->
+<div class="mt-6 pt-3 border-t border-espresso/20 flex justify-between items-end">
+<span class="font-mono text-[9px] text-espresso/50 uppercase">Verified Specimen</span>
+<span class="font-script text-2xl text-espresso font-bold">Sopi F.N.A</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: About Me & Profile Spec Sheet -->
+<!-- BEGIN: Featured Experience & Projects (#experience, Sage Grid) -->
+<section class="py-20 bg-sage-grid border-b border-espresso/20 relative" id="experience">
+<div class="max-w-6xl mx-auto px-4 sm:px-6">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+<!-- Left Column: Interactive Tab & Editorial Descriptions (Col 5) -->
+<div class="lg:col-span-5">
+<h2 class="font-serif text-3xl sm:text-5xl font-bold uppercase tracking-tight text-espresso leading-none">
+              FEATURED<br>EXPERIENCE
+            </h2>
+<div class="mt-2 flex items-center gap-2 mb-8">
+<span class="w-6 h-[2px] bg-espresso inline-block"></span>
+<p class="font-mono text-xs tracking-widest text-espresso uppercase font-bold">
+                Professional Apprenticeships &amp; Drafting
+              </p>
+</div>
+<!-- Interactive Tab Navigation Buttons -->
+<div class="flex flex-col gap-2.5 mb-8" data-purpose="experience-tabs">
+<button class="experience-tab-btn text-left p-3.5 rounded-lg border border-espresso/20 bg-espresso text-cream font-mono text-xs uppercase tracking-wider transition-all duration-200 flex items-center justify-between shadow-xs" id="tab-btn-0" onclick="switchExperience(0)">
+<span>01. PT PP BSI (Persero)</span>
+<span class="text-gold-star font-bold">→</span>
+</button>
+<button class="experience-tab-btn text-left p-3.5 rounded-lg border border-espresso/20 bg-butter/60 hover:bg-butter text-espresso font-mono text-xs uppercase tracking-wider transition-all duration-200 flex items-center justify-between" id="tab-btn-1" onclick="switchExperience(1)">
+<span>02. PT Arvit Studio</span>
+<span class="text-espresso/50">→</span>
+</button>
+<button class="experience-tab-btn text-left p-3.5 rounded-lg border border-espresso/20 bg-butter/60 hover:bg-butter text-espresso font-mono text-xs uppercase tracking-wider transition-all duration-200 flex items-center justify-between" id="tab-btn-2" onclick="switchExperience(2)">
+<span>03. SMKN 4 Jakarta Studio</span>
+<span class="text-espresso/50">→</span>
+</button>
+</div>
+<!-- Dynamic Experience Card View -->
+<div class="bg-white/90 p-6 rounded-xl border border-espresso/20 shadow-scrapbook relative" id="experience-detail-card">
+<div class="absolute -top-3 left-6 w-16 h-5 washi-tape"></div>
+<div id="exp-content-box">
+<span class="font-mono text-[10px] tracking-widest uppercase font-bold text-gold-star block mb-1" id="exp-role-badge">
+                  CAD DRAFTER &amp; PENGAWAS LAPANGAN
+                </span>
+<h3 class="font-serif text-2xl font-bold text-espresso leading-snug" id="exp-title">
+                  PT PP BSI (Persero)
+                </h3>
+<p class="font-mono text-xs text-espresso/60 mb-4" id="exp-period">
+                  Apprenticeship / Magang Industri • DKI Jakarta
+                </p>
+<div class="space-y-3 text-xs text-ink/85 leading-relaxed">
+<div>
+<h4 class="font-bold text-espresso font-mono uppercase text-[11px]">Tanggung Jawab Utama:</h4>
+<p id="exp-desc-1">
+                      Menyusun serta memperbarui gambar kerja (Shop Drawing &amp; As-Built Drawing) menggunakan AutoCAD sesuai revisi engineering di lapangan.
+                    </p>
+</div>
+<div>
+<h4 class="font-bold text-espresso font-mono uppercase text-[11px]">Pengawasan Lapangan:</h4>
+<p id="exp-desc-2">
+                      Melakukan inspeksi berkala pada pelaksanaan struktur dan finishing untuk memastikan deviasi kerja sesuai dengan spesifikasi teknis dan toleransi keselamatan.
+                    </p>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-espresso/15 flex flex-wrap gap-2" id="exp-tags">
+<span class="px-2.5 py-1 bg-cream rounded border border-espresso/15 font-mono text-[10px] text-espresso uppercase">AutoCAD 2D</span>
+<span class="px-2.5 py-1 bg-cream rounded border border-espresso/15 font-mono text-[10px] text-espresso uppercase">Site Inspection</span>
+<span class="px-2.5 py-1 bg-cream rounded border border-espresso/15 font-mono text-[10px] text-espresso uppercase">As-Built Drawing</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: 3 Vertical Drafting Showcase Frames (Col 7) -->
+<div class="lg:col-span-7">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+<!-- Frame 1: PT PP BSI -->
+<div class="group bg-white p-3 rounded-2xl shadow-scrapbook border border-espresso/20 flex flex-col justify-between transform hover:-translate-y-2 transition-transform duration-300">
+<!-- Device / Frame Header -->
+<div class="w-12 h-1.5 bg-neutral-300 rounded-full mx-auto mb-2"></div>
+<div class="aspect-[9/16] bg-espresso/5 rounded-xl border border-espresso/10 overflow-hidden relative flex flex-col justify-between p-3">
+<img alt="PT PP BSI Project Blueprint" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqZVZGT1bTbk6BYQTEiOOFwFxO5BKKJnlU0z3qYTH-AbssUFeoaVr54BwXfVnouZf5eoQGd9GbnwJtHV5_L-0B_l9kSA9ZttDsvfBgTN0_FFG9BPmn5wc8Y-v0EB8M62tcoABOjkRNl6nx6uU5cHkSZvyKhb5_BGXtHT6B0k1oPZi_IF8znE58A5aXzYCHtp4IvKqBSBWkB8ziOMWpRBfrd41BX6PnYElmAQUZOnI">
+<div class="relative z-10 self-start bg-espresso/80 backdrop-blur-xs text-cream px-2 py-0.5 rounded font-mono text-[9px] uppercase tracking-wider">
+                    Site &amp; CAD
+                  </div>
+<div class="relative z-10 bg-cream/95 p-2 rounded-lg border border-espresso/15 text-espresso shadow-xs">
+<p class="font-serif font-bold text-xs uppercase leading-tight">Field Supervision</p>
+<p class="font-mono text-[9px] text-espresso/70">Shop Drawing Verification</p>
+</div>
+</div>
+<!-- Frame Footer Metric -->
+<div class="mt-3 text-center border-t border-espresso/10 pt-2">
+<p class="font-mono text-[10px] font-bold text-espresso uppercase">PT PP BSI (Persero)</p>
+<p class="font-mono text-[9px] text-espresso/60">Drafter &amp; Site Inspector</p>
+</div>
+</div>
+<!-- Frame 2: PT Arvit Studio -->
+<div class="group bg-white p-3 rounded-2xl shadow-scrapbook border border-espresso/20 flex flex-col justify-between transform md:translate-y-4 hover:-translate-y-0 transition-transform duration-300">
+<!-- Device / Frame Header -->
+<div class="w-12 h-1.5 bg-neutral-300 rounded-full mx-auto mb-2"></div>
+<div class="aspect-[9/16] bg-espresso/5 rounded-xl border border-espresso/10 overflow-hidden relative flex flex-col justify-between p-3">
+<img alt="PT Arvit Studio 2-Story Structure" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYBigGQ9nYM-n4YAp9iEnT-0PZrdNfaAYSQySspGzONMiG9NhJ57TRcePu8Ojf18j9Oj81Xzgm-2EJ_F0WfLGkYCwMpOdjtJy4R727d_v6oyfALeE-g6-0od--8kds3NpbrBgJuVV7nsg7ufp-IrzzKILaXRXT8LXYE391ZMGmLmp-2aByKJ5ILdVh-jOGc-f_oQo0Z6v-adeToJGi1FVp9x7nWlTQod8o2CdgF_g">
+<div class="relative z-10 self-start bg-espresso/80 backdrop-blur-xs text-cream px-2 py-0.5 rounded font-mono text-[9px] uppercase tracking-wider">
+                    2-Story House
+                  </div>
+<div class="relative z-10 bg-cream/95 p-2 rounded-lg border border-espresso/15 text-espresso shadow-xs">
+<p class="font-serif font-bold text-xs uppercase leading-tight">Structural Drafter</p>
+<p class="font-mono text-[9px] text-espresso/70">Material Inventory Log</p>
+</div>
+</div>
+<!-- Frame Footer Metric -->
+<div class="mt-3 text-center border-t border-espresso/10 pt-2">
+<p class="font-mono text-[10px] font-bold text-espresso uppercase">PT Arvit Studio</p>
+<p class="font-mono text-[9px] text-espresso/60">Structural &amp; Logistics</p>
+</div>
+</div>
+<!-- Frame 3: SMKN 4 Jakarta -->
+<div class="group bg-white p-3 rounded-2xl shadow-scrapbook border border-espresso/20 flex flex-col justify-between transform hover:-translate-y-2 transition-transform duration-300">
+<!-- Device / Frame Header -->
+<div class="w-12 h-1.5 bg-neutral-300 rounded-full mx-auto mb-2"></div>
+<div class="aspect-[9/16] bg-espresso/5 rounded-xl border border-espresso/10 overflow-hidden relative flex flex-col justify-between p-3">
+<img alt="SMKN 4 Jakarta 3D Modeling" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvEC4Ycu7rRWXLEceqi5osFIiBzdazmuCVS9q_-y2lLUJFFX-uEGEqH-NBesjQpNkYaktylaJwmcLONKKnI5Ww7n4OHb8Lg3Gej2-A78gGSr60ASyOy6WujfszS2VMQchgLEWxPMOiPgM0RpQpIsyRoTwxOAFkIbB9f2yRqqmNF9RFOY7bsvj8SUF5yvoPAOaQ_W_rZd7lyiP9qHSt7TmtdBcfOoxVP_C2fyF_Ekw">
+<div class="relative z-10 self-start bg-espresso/80 backdrop-blur-xs text-cream px-2 py-0.5 rounded font-mono text-[9px] uppercase tracking-wider">
+                    3D &amp; Modeling
+                  </div>
+<div class="relative z-10 bg-cream/95 p-2 rounded-lg border border-espresso/15 text-espresso shadow-xs">
+<p class="font-serif font-bold text-xs uppercase leading-tight">RAB &amp; Modeling</p>
+<p class="font-mono text-[9px] text-espresso/70">Cost &amp; Material Estimation</p>
+</div>
+</div>
+<!-- Frame Footer Metric -->
+<div class="mt-3 text-center border-t border-espresso/10 pt-2">
+<p class="font-mono text-[10px] font-bold text-espresso uppercase">SMKN 4 Jakarta</p>
+<p class="font-mono text-[9px] text-espresso/60">TKP Studio Excellence</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Featured Experience & Projects -->
+<!-- BEGIN: Skills & Education (#skills, Cream Grid) -->
+<section class="py-20 bg-cream-grid border-b border-espresso/20" id="skills">
+<div class="max-w-6xl mx-auto px-4 sm:px-6">
+<div class="text-center max-w-xl mx-auto mb-14">
+<span class="text-gold-star text-2xl select-none inline-block mb-1">★</span>
+<h2 class="font-serif text-3xl sm:text-5xl font-bold uppercase tracking-tight text-espresso">
+            SKILLS &amp; EDUCATION
+          </h2>
+<p class="font-mono text-xs sm:text-sm tracking-widest text-espresso/70 uppercase mt-2">
+            Theoretical Foundations &amp; Hands-On Technical Badges
+          </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left Sheet: Ruled Notebook Paper for Education (Col 6) -->
+<div class="lg:col-span-6 bg-lined-paper p-8 sm:p-10 rounded-xl shadow-scrapbook border border-espresso/20 relative transform -rotate-1 hover:rotate-0 transition-transform">
+<!-- Washi tape at top -->
+<div class="absolute -top-3.5 left-12 w-28 h-6 washi-tape"></div>
+<div class="border-b-2 border-espresso pb-2 mb-6">
+<span class="font-mono text-[10px] uppercase font-bold tracking-widest text-gold-star">Timeline</span>
+<h3 class="font-serif text-3xl font-bold text-espresso uppercase tracking-wide">
+                EDUCATION JOURNEY
+              </h3>
+</div>
+<!-- Education Items -->
+<div class="space-y-6">
+<!-- Item 1: ITPLN -->
+<div class="relative pl-6 border-l-2 border-espresso/40">
+<span class="absolute -left-[7px] top-1.5 w-3 h-3 rounded-full bg-espresso border-2 border-white"></span>
+<span class="font-mono text-[11px] text-gold-star font-bold">2022 — Present</span>
+<h4 class="font-serif text-xl font-bold text-espresso leading-snug">
+                  Institut Teknologi PLN (ITPLN)
+                </h4>
+<p class="font-mono text-xs text-espresso/70 mb-1">
+                  S1 Teknik Informatika • Fakultas Telematika Energi
+                </p>
+<p class="text-xs text-ink/80 leading-relaxed font-sans">
+                  Fokus pada rekayasa perangkat lunak, algoritma pemrograman, pemecahan masalah komputasional, serta integrasi teknologi digital untuk optimasi sistem.
+                </p>
+</div>
+<!-- Item 2: SMKN 4 Jakarta -->
+<div class="relative pl-6 border-l-2 border-espresso/40">
+<span class="absolute -left-[7px] top-1.5 w-3 h-3 rounded-full bg-gold-star border-2 border-white"></span>
+<span class="font-mono text-[11px] text-gold-star font-bold">2019 — 2022</span>
+<h4 class="font-serif text-xl font-bold text-espresso leading-snug">
+                  SMKN 4 Jakarta
+                </h4>
+<p class="font-mono text-xs text-espresso/70 mb-1">
+                  Teknik Konstruksi &amp; Perumahan (TKP) / DPIB
+                </p>
+<p class="text-xs text-ink/80 leading-relaxed font-sans">
+                  Keahlian mendalam dalam penyusunan Gambar Kerja (AutoCAD 2D), pemodelan 3D SketchUp, Rencana Anggaran Biaya (RAB), ilmu ukur tanah, dan pengawasan proyek.
+                </p>
+</div>
+<!-- Item 3: SMP Patra Mandiri 2 -->
+<div class="relative pl-6 border-l-2 border-espresso/20">
+<span class="absolute -left-[7px] top-1.5 w-3 h-3 rounded-full bg-espresso/40 border-2 border-white"></span>
+<span class="font-mono text-[11px] text-espresso/50 font-bold">2016 — 2019</span>
+<h4 class="font-serif text-lg font-bold text-espresso/80 leading-snug">
+                  SMP Patra Mandiri 2 Palembang
+                </h4>
+<p class="text-xs text-ink/70 leading-relaxed font-sans">
+                  Membangun dasar kepemimpinan, disiplin belajar, dan keikutsertaan aktif dalam kegiatan sekolah.
+                </p>
+</div>
+</div>
+<!-- Bottom notebook note -->
+<div class="mt-8 pt-4 border-t border-espresso/15 flex items-center justify-between">
+<span class="font-mono text-[10px] text-espresso/60 uppercase">Jakarta Utara • Palembang</span>
+<span class="font-script text-xl text-espresso">continuously learning ♥</span>
+</div>
+</div>
+<!-- Right Sheet: Tilted Butter Sheet with Skill Badges (Col 6) -->
+<div class="lg:col-span-6 bg-butter p-8 sm:p-10 rounded-xl shadow-scrapbook border border-espresso/20 relative transform rotate-1 hover:rotate-0 transition-transform">
+<!-- Metallic Silver Clip Clamped Top Center -->
+<div class="absolute -top-5 right-12 z-20 pointer-events-none flex flex-col items-center">
+<div class="w-8 h-8 rounded-full border-2 border-neutral-400 -mb-4"></div>
+<div class="w-14 h-5 bg-neutral-800 rounded-t-sm shadow border border-neutral-600"></div>
+</div>
+<div class="border-b-2 border-espresso pb-2 mb-6">
+<span class="font-mono text-[10px] uppercase font-bold tracking-widest text-gold-star">Competencies</span>
+<h3 class="font-serif text-3xl font-bold text-espresso uppercase tracking-wide">
+                SKILLS &amp; CAPABILITIES
+              </h3>
+</div>
+<!-- Group 1: Technical CAD & Drafting -->
+<div class="mb-6">
+<h4 class="font-mono text-xs font-bold uppercase tracking-wider text-espresso/80 mb-3 flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-gold-star"></span>
+                Drafting &amp; Civil Engineering
+              </h4>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1.5 bg-white rounded-md border border-espresso/20 shadow-xs font-mono text-xs font-medium text-espresso hover:border-gold-star transition-colors">
+                  AutoCAD 2D (Shop Drawings)
+                </span>
+<span class="px-3 py-1.5 bg-white rounded-md border border-espresso/20 shadow-xs font-mono text-xs font-medium text-espresso hover:border-gold-star transition-colors">
+                  SketchUp 3D Modeling
+                </span>
+<span class="px-3 py-1.5 bg-white rounded-md border border-espresso/20 shadow-xs font-mono text-xs font-medium text-espresso hover:border-gold-star transition-colors">
+                  Struktur Bangunan 2 Lantai
+                </span>
+<span class="px-3 py-1.5 bg-white rounded-md border border-espresso/20 shadow-xs font-mono text-xs font-medium text-espresso hover:border-gold-star transition-colors">
+                  RAB &amp; Estimasi Biaya
+                </span>
+<span class="px-3 py-1.5 bg-white rounded-md border border-espresso/20 shadow-xs font-mono text-xs font-medium text-espresso hover:border-gold-star transition-colors">
+                  As-Built &amp; Detail Arsitektur
+                </span>
+</div>
+</div>
+<!-- Group 2: Field Supervision & Logistics -->
+<div class="mb-6">
+<h4 class="font-mono text-xs font-bold uppercase tracking-wider text-espresso/80 mb-3 flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-gold-star"></span>
+                Site Inspection &amp; Management
+              </h4>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1.5 bg-white rounded-md border border-espresso/20 shadow-xs font-mono text-xs font-medium text-espresso hover:border-gold-star transition-colors">
+                  Pengawasan Lapangan (Site QC)
+                </span>
+<span class="px-3 py-1.5 bg-white rounded-md border border-espresso/20 shadow-xs font-mono text-xs font-medium text-espresso hover:border-gold-star transition-colors">
+                  Pencatatan Logistik Material
+                </span>
+<span class="px-3 py-1.5 bg-white rounded-md border border-espresso/20 shadow-xs font-mono text-xs font-medium text-espresso hover:border-gold-star transition-colors">
+                  Laporan Harian / Mingguan Proyek
+                </span>
+<span class="px-3 py-1.5 bg-white rounded-md border border-espresso/20 shadow-xs font-mono text-xs font-medium text-espresso hover:border-gold-star transition-colors">
+                  Inventarisasi Gudang
+                </span>
+</div>
+</div>
+<!-- Group 3: Informatics & Digital Tools -->
+<div class="mb-6">
+<h4 class="font-mono text-xs font-bold uppercase tracking-wider text-espresso/80 mb-3 flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-gold-star"></span>
+                Informatics &amp; Computing
+              </h4>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1.5 bg-espresso text-cream rounded-md border border-espresso shadow-xs font-mono text-xs font-medium">
+                  Informatics Fundamentals
+                </span>
+<span class="px-3 py-1.5 bg-white rounded-md border border-espresso/20 shadow-xs font-mono text-xs font-medium text-espresso hover:border-gold-star transition-colors">
+                  Algoritma &amp; Struktur Data
+                </span>
+<span class="px-3 py-1.5 bg-white rounded-md border border-espresso/20 shadow-xs font-mono text-xs font-medium text-espresso hover:border-gold-star transition-colors">
+                  Microsoft Excel (Formula &amp; Data Entry)
+                </span>
+<span class="px-3 py-1.5 bg-white rounded-md border border-espresso/20 shadow-xs font-mono text-xs font-medium text-espresso hover:border-gold-star transition-colors">
+                  Technical Documentation
+                </span>
+</div>
+</div>
+<!-- Group 4: Soft Skills -->
+<div>
+<h4 class="font-mono text-xs font-bold uppercase tracking-wider text-espresso/80 mb-3 flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-gold-star"></span>
+                Workplace Synergy
+              </h4>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-espresso/5 rounded-full border border-espresso/20 font-mono text-xs text-espresso">
+                  Komunikasi Tim
+                </span>
+<span class="px-3 py-1 bg-espresso/5 rounded-full border border-espresso/20 font-mono text-xs text-espresso">
+                  Disiplin &amp; Ketepatan Waktu
+                </span>
+<span class="px-3 py-1 bg-espresso/5 rounded-full border border-espresso/20 font-mono text-xs text-espresso">
+                  Kemampuan Beradaptasi Cepat
+                </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Skills & Education -->
+<!-- BEGIN: Let's Connect & Footer (#contact, Espresso Grid) -->
+<section class="py-24 bg-espresso-grid text-cream relative overflow-hidden" id="contact">
+<!-- Ambient light effect -->
+<div class="absolute inset-0 bg-radial-gradient from-transparent to-espresso-dark/80 pointer-events-none"></div>
+<div class="max-w-4xl mx-auto px-4 relative z-10">
+<!-- Postcard Container -->
+<div class="relative bg-butter text-espresso p-8 sm:p-14 rounded-2xl shadow-scrapbook-deep border-2 border-espresso/30 transform -rotate-1 hover:rotate-0 transition-transform duration-300">
+<!-- Realistic Silver Binder Clip Clamped to Postcard Top -->
+<div class="absolute -top-7 left-1/2 -translate-x-1/2 z-30 pointer-events-none flex flex-col items-center">
+<svg class="drop-shadow-sm" fill="none" height="30" viewBox="0 0 46 34" width="40" xmlns="http://www.w3.org/2000/svg">
+<path d="M14 32V10C14 5.58172 17.5817 2 22 2H24C28.4183 2 32 5.58172 32 10V32" stroke="#B0B0B0" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<div class="w-16 h-6 bg-gradient-to-b from-[#2a2a2a] to-[#141414] rounded-sm shadow-md border border-neutral-700 -mt-1"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+<!-- Left Call To Action (Col 7) -->
+<div class="md:col-span-7">
+<span class="text-gold-star text-2xl select-none inline-block mb-1">★</span>
+<p class="font-script text-4xl sm:text-5xl font-bold text-espresso leading-none mb-2">
+                Let's collaborate!
+              </p>
+<h3 class="font-serif text-2xl sm:text-3xl font-bold uppercase tracking-tight text-espresso mb-4">
+                GET IN TOUCH
+              </h3>
+<p class="text-xs sm:text-sm text-ink/80 leading-relaxed font-sans mb-6">
+                Tertarik mendiskusikan peluang magang, proyek drafting CAD, inspeksi lapangan, atau kolaborasi bidang teknologi informatika? Saya selalu terbuka untuk berdiskusi dan berkontribusi.
+              </p>
+<!-- Action Links -->
+<div class="flex flex-wrap gap-3">
+<a class="px-5 py-3 bg-espresso text-cream font-mono text-xs uppercase tracking-wider font-semibold rounded hover:bg-gold-star transition-all duration-200 shadow flex items-center gap-2" href="mailto:sopi49334@gmail.com">
+<span>•</span>
+<span>Kirim Email</span>
+</a>
+<a class="px-5 py-3 border border-espresso/40 hover:bg-espresso/5 text-espresso font-mono text-xs uppercase tracking-wider font-semibold rounded transition-colors flex items-center gap-2" href="https://wa.me/6288289546560" rel="noopener noreferrer" target="_blank">
+<span>•</span>
+<span>WhatsApp Chat</span>
+</a>
+</div>
+</div>
+<!-- Right Postcard Stamp & Details (Col 5) -->
+<div class="md:col-span-5 bg-white/80 p-5 rounded-xl border border-dashed border-espresso/30 flex flex-col justify-between">
+<!-- Postage Stamp Element -->
+<div class="flex justify-between items-start mb-4">
+<div>
+<p class="font-mono text-[10px] tracking-widest uppercase font-bold text-espresso/60">POSTAGE PAID</p>
+<p class="font-mono text-xs font-bold text-espresso">JAKARTA • ID</p>
+</div>
+<!-- Stamp Box -->
+<div class="w-14 h-16 border-2 border-dashed border-espresso/40 bg-butter/80 rounded flex flex-col items-center justify-center p-1 transform rotate-3">
+<span class="text-gold-star text-base">★</span>
+<span class="font-mono text-[8px] uppercase tracking-tighter text-espresso font-bold">SOPI</span>
+<span class="font-mono text-[7px] text-espresso/60">ITPLN</span>
+</div>
+</div>
+<!-- Direct Contact Information -->
+<div class="space-y-2 font-mono text-xs text-espresso/85 pt-2 border-t border-espresso/15">
+<div>
+<span class="text-[9px] uppercase tracking-wider text-espresso/60 block">Email Address</span>
+<span class="font-semibold break-all">sopi49334@gmail.com</span>
+</div>
+<div>
+<span class="text-[9px] uppercase tracking-wider text-espresso/60 block">Phone / WhatsApp</span>
+<span class="font-semibold">0882-8954-6560</span>
+</div>
+<div>
+<span class="text-[9px] uppercase tracking-wider text-espresso/60 block">Domicile</span>
+<span>Cilincing, Jakarta Utara, ID</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Metadata -->
+<div class="mt-14 pt-8 border-t border-cream/15 text-center font-mono text-xs text-cream/60 flex flex-col sm:flex-row items-center justify-between gap-4">
+<p>© 2026 Sopi Fadhillah Nur Azizah. All rights reserved.</p>
+<div class="flex items-center gap-4">
+<span class="hover:text-cream transition-colors">Informatics • ITPLN</span>
+<span>•</span>
+<span class="hover:text-cream transition-colors">SMKN 4 Jakarta</span>
+<span>•</span>
+<a class="text-gold-star hover:underline" href="#">Back to top ↑</a>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Let's Connect & Footer -->
+</main>
+<!-- BEGIN: Interactive Tab Switching Script -->
+<script data-purpose="experience-tabs-logic">
+    // Data store for experience records
+    const experiences = [
+      {
+        badge: "CAD DRAFTER & PENGAWAS LAPANGAN",
+        title: "PT PP BSI (Persero)",
+        period: "Apprenticeship / Magang Industri • DKI Jakarta",
+        desc1: "Menyusun serta memperbarui gambar kerja (Shop Drawing & As-Built Drawing) menggunakan AutoCAD sesuai revisi engineering langsung dari lapangan.",
+        desc2: "Melakukan inspeksi berkala pada pelaksanaan struktur dan finishing untuk memastikan deviasi kerja sesuai dengan spesifikasi teknis dan toleransi keselamatan konstruksi.",
+        tags: ["AutoCAD 2D", "Site Inspection", "As-Built Drawing", "Quality Control"]
+      },
+      {
+        badge: "STRUCTURAL DRAFTER & LOGISTIK MATERIAL",
+        title: "PT Arvit Studio",
+        period: "Proyek Perancangan Struktur & Inventaris • DKI Jakarta",
+        desc1: "Menyusun drafting denah, potongan, dan detail struktur bangunan 2 lantai dengan presisi matematis menggunakan AutoCAD dan visualisasi 3D SketchUp.",
+        desc2: "Mengelola pencatatan keluar-masuk logistik material proyek, mengontrol volume ketersediaan bahan, serta membuat rekonsiliasi data inventaris berkala.",
+        tags: ["Struktur 2 Lantai", "Logistik Material", "SketchUp 3D", "Inventory Control"]
+      },
+      {
+        badge: "VOCATIONAL CAD EXCELLENCE",
+        title: "SMKN 4 Jakarta Studio",
+        period: "Teknik Konstruksi & Perumahan • 2019 - 2022",
+        desc1: "Menyelesaikan seluruh modul pembuatan gambar kerja komprehensif (arsitektur, struktur beton bertulang, sanitasi, dan kelistrikan rumah tinggal).",
+        desc2: "Menghitung Rencana Anggaran Biaya (RAB), volume pekerjaan, serta analisa harga satuan material konstruksi untuk proyek perumahan simulasi.",
+        tags: ["RAB Estimation", "Gambar Kerja", "DPIB", "SMKN 4 JKT"]
+      }
+    ];
+
+    function switchExperience(index) {
+      const data = experiences[index];
+      if (!data) return;
+
+      // Update text elements
+      document.getElementById('exp-role-badge').textContent = data.badge;
+      document.getElementById('exp-title').textContent = data.title;
+      document.getElementById('exp-period').textContent = data.period;
+      document.getElementById('exp-desc-1').textContent = data.desc1;
+      document.getElementById('exp-desc-2').textContent = data.desc2;
+
+      // Update tags
+      const tagsContainer = document.getElementById('exp-tags');
+      tagsContainer.innerHTML = '';
+      data.tags.forEach(tag => {
+        const span = document.createElement('span');
+        span.className = 'px-2.5 py-1 bg-cream rounded border border-espresso/15 font-mono text-[10px] text-espresso uppercase';
+        span.textContent = tag;
+        tagsContainer.appendChild(span);
+      });
+
+      // Update button active styles
+      for (let i = 0; i < 3; i++) {
+        const btn = document.getElementById(`tab-btn-${i}`);
+        if (i === index) {
+          btn.className = "experience-tab-btn text-left p-3.5 rounded-lg border border-espresso/20 bg-espresso text-cream font-mono text-xs uppercase tracking-wider transition-all duration-200 flex items-center justify-between shadow-xs";
+          btn.querySelector('span:last-child').className = "text-gold-star font-bold";
+        } else {
+          btn.className = "experience-tab-btn text-left p-3.5 rounded-lg border border-espresso/20 bg-butter/60 hover:bg-butter text-espresso font-mono text-xs uppercase tracking-wider transition-all duration-200 flex items-center justify-between";
+          btn.querySelector('span:last-child').className = "text-espresso/50";
+        }
+      }
+    }
+  </script>
+<!-- END: Interactive Tab Switching Script -->
+
+
+
+
+</body></html>

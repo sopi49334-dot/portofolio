@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@theme {
+  --color-espresso: #482A22;
+  --color-espresso-dark: #361E18;
+  --color-cream: #F6F4EA;
+  --color-butter: #F9F5D7;
+  --color-sage-sand: #DFD8B8;
+  --color-gold-star: #A68438;
+  --color-ink: #3D231C;
+  --color-ink-soft: rgba(61, 35, 28, 0.72);
+  --color-chrome-metal: #C4C4C4;
+
+  --font-serif: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  --font-script: "Caveat", cursive;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --font-mono: "Space Mono", monospace;
+
+  --shadow-scrapbook: 0 12px 28px -6px rgba(45, 24, 18, 0.18), 0 4px 10px -2px rgba(45, 24, 18, 0.08);
+  --shadow-scrapbook-deep: 0 20px 35px -8px rgba(35, 18, 14, 0.28), 0 8px 16px -4px rgba(35, 18, 14, 0.12);
+  --shadow-sticky: 2px 8px 16px rgba(54, 30, 24, 0.12);
+  --shadow-polaroid: 0 18px 36px rgba(0, 0, 0, 0.22);
+}
+
+/* Deep espresso drafting grid */
+.bg-espresso-grid {
+  background-color: #482A22;
+  background-image:
+    linear-gradient(to right, rgba(246, 244, 234, 0.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(246, 244, 234, 0.07) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Cream paper drafting grid */
+.bg-cream-grid {
+  background-color: #F6F4EA;
+  background-image:
+    linear-gradient(to right, rgba(72, 42, 34, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(72, 42, 34, 0.08) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Sage warm olive drafting grid */
+.bg-sage-grid {
+  background-color: #DFD8B8;
+  background-image:
+    linear-gradient(to right, rgba(72, 42, 34, 0.09) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(72, 42, 34, 0.09) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+/* Lined notebook paper texture */
+.bg-lined-paper {
+  background-color: #FAF8F0;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 27px,
+    rgba(166, 132, 56, 0.2) 28px
+  );
+  line-height: 28px;
+}
+
+/* Patterned Washi Tape */
+.washi-tape {
+  background-color: #482A22;
+  background-image: radial-gradient(#F9F5D7 1.5px, transparent 1.5px);
+  background-size: 9px 9px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+.washi-tape::before,
+.washi-tape::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 6px;
+  background-size: 6px 6px;
+}
+.washi-tape::before {
+  left: -4px;
+  background: linear-gradient(135deg, transparent 33.33%, #482A22 33.33%) 0 0;
+}
+.washi-tape::after {
+  right: -4px;
+  background: linear-gradient(45deg, transparent 33.33%, #482A22 33.33%) 0 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
